@@ -1,0 +1,29 @@
+﻿{
+  "name": "ATC demo 30 - Content Script demo",
+  "description": "Youtube sayfasında sayfa yüklenir yüklenmez ilgili coverları göstercez 0.4",
+  "version": "0.4",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        //"<all_urls>"
+        "http://*.youtube.com/*",
+        "https://*.youtube.com/*"
+
+      ],
+      "js": [ "content3.js" ],
+      "css": [ "content3.css" ]
+    }
+  ],
+  "permissions": [
+    //"<all_urls>",
+    "http://*.youtube.com/*",
+    "https://*.youtube.com/*",
+    "tabs"
+  ],
+  "background": {
+    "page": "background3.html"
+  }
+ // , "content_security_policy": "script-src 'self' http://www.allthecovers.com; object-src 'self'"
+
+}
