@@ -1,8 +1,6 @@
-﻿//Herşey burda başlıyor
-
+//Herşey burda başlıyor
 //alert("OLDU1");
-
-
+alert("Webten update denemesi");
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
