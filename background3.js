@@ -2,6 +2,8 @@
 //alert("OLDU1");
 alert("Webten update denemesi");
 
+alert ("Webten pull request denemesi");
+
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
     alert("OLDU_BG1");
